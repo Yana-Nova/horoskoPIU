@@ -11,7 +11,7 @@ class User{
   final String login;
  //userrrrrrrrrrrrrrrrrrrrr construktorrrrrrrrrr kotory sozdaet pol'zovatelyarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
   User({
-  //required чтобы не пыло пустых ОРОООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООполейррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррр
+  //required чтобы не пыло пустых полейррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррррр
     required this.login,
   required this.password,
 });
@@ -374,7 +374,7 @@ class _RegisterPageState
 
                 TextField(
                   controller: loginController,
-
+//BBEDEHHblu /\OGUH nonaDaeT B /\OGIH KOHTPO/\R
                   decoration: const InputDecoration(
                     labelText: 'Логин',
                     border: OutlineInputBorder(),
@@ -386,7 +386,7 @@ class _RegisterPageState
                 TextField(
                   controller: passwordController,
                   obscureText: true,
-
+//ObCKYP  TEKCT nPR4ET napo/\b
                   decoration: const InputDecoration(
                     labelText: 'Пароль',
                     border: OutlineInputBorder(),
@@ -418,9 +418,9 @@ class _RegisterPageState
 }
 
 class AstroPage extends StatefulWidget {
-  
+  //no/\b3oBATELb KOTOPblu BOWE/\
 final User user;
-
+//FYHK4UR BblXODA
   final VoidCallback onLogout;
 
   const AstroPage({
@@ -499,7 +499,7 @@ final List<String> Vorpalus=[
       clicks=0;});}
   void _getPrediction() {
     setState(() {
-      
+      //ФOPMY/\A KOTOPAR nOMOGAET BblBECTU CEKPETHOE COOBWEHUE
       bool Secret=random.nextInt(100)<10;
       
       if(Secret){
@@ -512,6 +512,7 @@ final List<String> Vorpalus=[
       }
       luck = random.nextInt(101);
     clicks++;
+      //UHCEPT-DObABUTb 3Anucb B HA4ALO CnUCKA UCTOPUU
       gah.insert(0,'${_selectedSign.emoji} ${_selectedSign.name} $_predictionText удача $luck%');
     });
   }
@@ -523,6 +524,7 @@ final List<String> Vorpalus=[
       
       appBar: AppBar(
         title: Text('Привет ${widget.user.login}'),
+        //KHOnKA CnPABA B BEPXHEU nAHE/\U
         actions:[
           IconButton(
           onPressed:widget.onLogout,
@@ -530,6 +532,7 @@ final List<String> Vorpalus=[
           ),
         ],
         centerTitle: true,
+      //прокрутка экрана
       ),body: SingleChildScrollView(
       child: Center(
         child: Card(
@@ -548,10 +551,12 @@ final List<String> Vorpalus=[
                   ),
                 ),
                 const SizedBox(height: 20),
+                //cgbcjr МММИИИИИИИИИИИИИИИИИИИИИИПП
                 DropdownButton<ZodiacSign>(
                   value: _selectedSign,
                   items: allZodiacSigns
-                      .map<DropdownMenuItem<ZodiacSign>>((ZodiacSign signItem) {
+                  //geyrn dsgflf.obv cgbcrt пункт выпадающим списке    
+                  .map<DropdownMenuItem<ZodiacSign>>((ZodiacSign signItem) {
                     return DropdownMenuItem<ZodiacSign>(
                       value: signItem,
                       child: Text('${signItem.emoji} ${signItem.name}'),
